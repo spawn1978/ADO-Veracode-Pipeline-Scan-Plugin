@@ -30,4 +30,3 @@ steps:
     fileToScan: '$(System.DefaultWorkingDirectory)/pipeline-scan_old.jar'
     policyName: 'Veracode Recommended SCA High'
     baselineFileOptions: 'standard'
-    fileToScan: '$(System.DefaultWorkingDirectory)/pipeline-scan_old.jar'
