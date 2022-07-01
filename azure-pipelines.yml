@@ -1,0 +1,30 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+
+#- task: VeracodePipelineScan@1  
+#  inputs:  
+#    VeracodeAPIID: '$(vid)'  
+#    VeracodeAPISecret: '$(vkey)'  
+#    fileToScan: '$(System.DefaultWorkingDirectory)/target/verademo.war'
+- task: VeracodePipelineScan@0
+  inputs:
+    VeracodeAPIID: '4fdace8ddfffa3cab7c0f5adcd8c4d8c'
+    VeracodeAPIsecret: '699003c81f14a5a20fb9953193ec8ef4eb883a81a94faa8121ec6721013e768bf0165d17945344b1ad26aac9d8debde739e7e6e9313f8329c07e5b87de9f9f32'
+    fileToScan: '$(System.DefaultWorkingDirectory)/pipeline-scan_old.jar'
