@@ -29,5 +29,5 @@ steps:
     VeracodeAPIsecret: '699003c81f14a5a20fb9953193ec8ef4eb883a81a94faa8121ec6721013e768bf0165d17945344b1ad26aac9d8debde739e7e6e9313f8329c07e5b87de9f9f32'
     fileToScan: '$(System.DefaultWorkingDirectory)/pipeline-scan_old.jar'
     policyName: 'Veracode Recommended SCA High'
-    baselineFileOptions: 'standard''
+    baselineFileOptions: 'standard'
     fileToScan: '$(System.DefaultWorkingDirectory)/pipeline-scan_old.jar'
